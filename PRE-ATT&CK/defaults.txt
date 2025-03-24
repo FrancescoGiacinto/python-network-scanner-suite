@@ -1,0 +1,56 @@
+admin admin
+admin 1234
+admin password
+admin root
+admin toor
+admin admin123
+admin letmein
+
+root root
+root toor
+root 1234
+root password
+root admin
+root root123
+
+user user
+user 1234
+user user123
+user password
+user letmein
+
+test test
+test 1234
+test test123
+test password
+
+guest guest
+guest 1234
+guest guest123
+guest password
+
+ftp ftp
+ftp ftp123
+ftp 1234
+ftp password
+
+support support
+support 1234
+support password
+
+oracle oracle
+oracle 1234
+oracle oracle123
+
+ubuntu ubuntu
+ubuntu 1234
+ubuntu password
+
+pi raspberry
+pi pi
+pi 1234
+
+administrator administrator
+administrator admin
+administrator 1234
+administrator password
