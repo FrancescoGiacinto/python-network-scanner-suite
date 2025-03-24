@@ -45,7 +45,7 @@ def search_subdomains(base_domain: str, subdomains: List[str], include_numbers: 
     Try to resolve common subdomains and optionally numbered subdomains.
 
     Args:
-        base_domain (str): The domain to append subdomains to (e.g., 'google.com').
+        base_domain (str): The domain to append subdomains to (e.g., 'domain.xxx').
         subdomains (List[str]): A list of subdomain prefixes to test (e.g., 'mail', 'vpn').
         include_numbers (bool): Whether to test numbered subdomains (e.g., 'www1', 'mail2').
     """
@@ -85,7 +85,7 @@ def load_subdomains(file_path: str) -> List[str]:
 
 
 if __name__ == "__main__":
-    base_domain = "xxxxxxxxx.xxx"
+    base_domain = "domain.xxx"
     script_dir = os.path.dirname(os.path.abspath(__file__))
     wordlist_path = os.path.join(script_dir, "subdomains.txt")
     subdomain_list = load_subdomains(wordlist_path)

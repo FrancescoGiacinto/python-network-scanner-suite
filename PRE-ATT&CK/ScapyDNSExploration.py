@@ -84,7 +84,7 @@ def load_subdomains(file_path: str) -> List[str]:
 
 
 if __name__ == "__main__":
-    domain = "xxxxx.xxx"
+    domain = "domain.xxx"
     script_dir = os.path.dirname(os.path.abspath(__file__))
     wordlist_path = os.path.join(script_dir, "subdomains.txt")
     subs = load_subdomains(wordlist_path)
