@@ -3,7 +3,7 @@ import os
 from typing import List
 
 
-def dns_query(domain: str, target_ip: str = "8.8.8.8", dport: int = 53, timeout: int = 1) -> List[str]:
+def dns_query(domain: str, target_ip: str = "x.x.x.x", dport: int = 53, timeout: int = 1) -> List[str]:
     """
     Perform a stealthy DNS A-record lookup using Scapy.
 
@@ -28,13 +28,13 @@ def dns_query(domain: str, target_ip: str = "8.8.8.8", dport: int = 53, timeout:
     return results
 
 
-def reverse_dns_query(ip: str, target_ip: str = "8.8.8.8", dport: int = 53, timeout: int = 1) -> List[str]:
+def reverse_dns_query(ip: str, target_ip: str = "x.x.x.x", dport: int = 53, timeout: int = 1) -> List[str]:
     """
     Perform a stealthy reverse DNS (PTR) lookup using Scapy.
 
     Args:
         ip (str): IP address to resolve.
-        target_ip (str): DNS server to query (default: 8.8.8.8).
+        target_ip (str): DNS server to query (default: x.x.x.x).
         dport (int): Destination port.
         timeout (int): Timeout for response.
 
@@ -84,7 +84,7 @@ def load_subdomains(file_path: str) -> List[str]:
 
 
 if __name__ == "__main__":
-    domain = "google.com"
+    domain = "xxxxx.xxx"
     script_dir = os.path.dirname(os.path.abspath(__file__))
     wordlist_path = os.path.join(script_dir, "subdomains.txt")
     subs = load_subdomains(wordlist_path)

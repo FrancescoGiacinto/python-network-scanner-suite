@@ -5,8 +5,8 @@ import socket
 nm = nmap.PortScanner()
 
 # Target IP and domain
-IPtarget: str = "8.8.8.8"
-DNStarget: str = "google.com"
+IPtarget: str = "x.x.x.x"
+DNStarget: str = "xxxxxxxxxxxxxxxx.xxx"
 ports: str = "25,53,443,445,8080,8443"
 
 def port_scan_tcp(target_ip: str, port_list: str) -> None:

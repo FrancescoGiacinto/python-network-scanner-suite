@@ -35,14 +35,14 @@ def tcp_port_scan(target_ip: str, ports: List[int]) -> None:
         print(f"[!] No response from {target_ip}. Host may be unreachable.")
 
 
-def dns_service_check(target_ip: str, port: int = 53, domain: str = "google.com") -> None:
+def dns_service_check(target_ip: str, port: int = 53, domain: str = "xxxxxxxxx.xxx") -> None:
     """
     Attempt to resolve a domain using a custom DNS server and port.
 
     Args:
         target_ip (str): IP address of the DNS server to test.
         port (int): Port to test DNS on (default is 53).
-        domain (str): Domain to resolve (default is google.com).
+        domain (str): Domain to resolve (default is xxxxxx.xxx).
     """
     print(f"\n[+] Testing DNS server at {target_ip}:{port} with query for {domain}")
     try:
@@ -62,11 +62,11 @@ def dns_service_check(target_ip: str, port: int = 53, domain: str = "google.com"
 
 
 if __name__ == "__main__":
-    ip_target = "8.8.8.8"
+    ip_target = "x.x.x.x"
     port_list = [25, 53, 443, 445, 8080, 8443]
 
     # Perform TCP port scan
     tcp_port_scan(ip_target, port_list)
 
     # Check DNS response
-    dns_service_check(ip_target, port=53, domain="google.com")
+    dns_service_check(ip_target, port=53, domain="xxxxxx.xxx")

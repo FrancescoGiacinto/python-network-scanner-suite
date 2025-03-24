@@ -1,3 +1,19 @@
+⚠️ Disclaimer
+⚠️ This project is intended for educational purposes only.
+
+The scripts included in this repository are designed to demonstrate common reconnaissance techniques (e.g., DNS scanning, TCP port scanning) in cybersecurity, aligned with phases like Pre-ATT&CK reconnaissance.
+
+Do not run these scripts on networks, domains, or systems that you do not own or do not have explicit permission to test.
+
+Unauthorized scanning or probing may be considered illegal or unethical, depending on your jurisdiction and target.
+
+Always obtain written consent before testing any third-party infrastructure.
+
+The author is not responsible for any misuse of the code.
+
+Use responsibly, learn safely. 
+
+
 This repository contains scripts based on the "Python for Cybersecurity Specialization" course by Howard Poston.
 
 The course offers a hands-on introduction to using Python for various cybersecurity tasks.
