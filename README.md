@@ -1,37 +1,39 @@
+### Python for Cybersecurity – PRE-ATT&CK Tools
+This repository contains a collection of Python scripts inspired by the "Python for Cybersecurity Specialization" course by Howard Poston on Coursera.
+The focus is on implementing reconnaissance techniques aligned with the MITRE ATT&CK PRE-ATT&CK phase.
+
+These scripts are educational in nature and showcase how Python can be used for scanning, enumeration, and automation during the initial stages of a cybersecurity assessment.
+
 ⚠️ Disclaimer
 ⚠️ This project is intended for educational purposes only.
 
-The scripts included in this repository are designed to demonstrate common reconnaissance techniques (e.g., DNS scanning, TCP port scanning) in cybersecurity, aligned with phases like Pre-ATT&CK reconnaissance.
+The scripts in this repository demonstrate techniques such as DNS scanning, TCP port scanning, and subdomain enumeration.
 
-Do not run these scripts on networks, domains, or systems that you do not own or do not have explicit permission to test.
+Do not run these scripts against domains, networks, or systems that you do not own or do not have explicit written permission to test.
 
-Unauthorized scanning or probing may be considered illegal or unethical, depending on your jurisdiction and target.
+Unauthorized scanning may be considered illegal or unethical depending on your jurisdiction and the target.
 
-Always obtain written consent before testing any third-party infrastructure.
+The author is not responsible for any misuse or unauthorized use of this code.
 
-The author is not responsible for any misuse of the code.
+Always test responsibly, ethically, and with proper consent.
 
-Use responsibly, learn safely. 
+### About the Scripts
+These scripts are based on demonstrations from the "Python for Cybersecurity Specialization" by Howard Poston.
+
+They have been transcribed and adapted for Windows users, where necessary.
+
+While the original logic follows the course content, I may modify, improve, or expand these tools over time for learning and portfolio purposes.
+
+### Dependencies
+Install the required Python libraries:
 
 
-This repository contains scripts based on the "Python for Cybersecurity Specialization" course by Howard Poston.
+pip install python-nmap dnspython
 
-The course offers a hands-on introduction to using Python for various cybersecurity tasks.
-
-These scripts were not originally created by me — they are transcriptions and adaptations for Windows users based on code demonstrated in the course videos.
-
-However, I reserve the right to modify, improve, or adapt them over time for learning purposes and to showcase them as part of my technical portfolio.
-
-
-# Dependencies
 Library	Purpose
-python-nmap	Interface to run and parse Nmap scans
-dnspython	Used to send real DNS queries in Python
+python-nmap	Interface to run and parse Nmap scans via Python
+dnspython	Perform DNS queries directly from Python scripts
 
-# on windows install nmap
-pip install python-nmap
+### On Windows
+Make sure Nmap is installed and added to your system PATH.
 
-
-# credits :
-for the subdomain:
-https://github.com/rbsec/dnscan/blob/master/subdomains-10000.txt
